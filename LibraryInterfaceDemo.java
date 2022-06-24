@@ -8,7 +8,7 @@ interface LibraryUser
 // creating a subclass,implements the above created interface
 class KidUser implements LibraryUser
 {
-    int age;String bookType;//instance variable of the subclass
+   private int age;private String bookType;//instance variable of the subclass
     public KidUser(int age,String bookType)
     { // constructor of the subclass
         this.age=age;
@@ -31,7 +31,7 @@ class KidUser implements LibraryUser
 //subclass for adult users
     class AdultUser implements LibraryUser
     {
-        int age;String bookType;// instance variable declaration in sub class
+     private int age;private String bookType;// instance variable declaration in sub class
         public AdultUser(int age,String bookType)
         {// constructor for the subclass
             this.age=age;
